@@ -245,7 +245,7 @@ class Migrations(list):
             except ValueError:
                 pass
         # Work out the new filename
-        return "%04i.py" % highest_number + 1
+        return "%04i.py" % (highest_number + 1,)
 
 
 class Migration(object):
